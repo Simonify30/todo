@@ -238,6 +238,33 @@ li{
         
 
     }
+
+    h1{
+        font-size: 28px;
+    }
+
+    input{
+        padding: 6px;
+        width: 60%;
+    }
+
+    .list{
+        width: 70%;
+    }
+
+    ul{
+        width: 200px;
+        margin: auto;
+    }
+
+    .item{
+        padding: 9px;
+        font-size: 17px;
+    }
+
+    button{
+        padding: 5px 9px;
+    }
     
 }
 
@@ -262,16 +289,43 @@ li{
         padding: 0.4rem;
         
     }
+
+    h1{
+        font-size: 32px;
+    }
+
+    input{
+        padding: 8px;
+        width: 60%;
+    }
+
+    .list{
+        width: 70%;
+    }
+
+    ul{
+        width: 210px;
+        margin: auto;
+    }
+
+    .item{
+        padding: 9px;
+        font-size: 17px;
+    }
+
+    button{
+        padding: 5px 9px;
+    }
     
 }
 
 @media screen and (width <= 300px) {
     h1{
-        font-size: 25px;
+        font-size: 28px;
     }
 
     input{
-        padding: 5px;
+        padding: 6px;
         width: 60%;
     }
 
