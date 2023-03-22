@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="back"></div>
+    <div class="container">
+        <header class="deletequestion">
+            <h2>You whant to delete this entry.</h2>
+            <p>Are you sure you want to delete this file?</p>
+            <div class="approval">
+                <button class="qust nobtn">No (cancel)</button>
+                <button class="qust yesbtn">Yes</button>
+            </div>
+        </header>
+        <main>
+            <h1><i class="fa-solid fa-clipboard-check"></i>  TO-DO LIST</h1>
+            <div>
+                <input type="text" name="inputs" id="inputs">
+                <button class="btn">Add</button> 
+            </div>
+            
+        </main>
+        <div class="list">
+            <ul class="movielist todoItems"></ul> 
+        </div>
+    </div>
+    
+    
+    
+
+    <script src="todos.js"></script>  
+</body>
+</html>
