@@ -266,30 +266,62 @@ li{
 }
 
 @media screen and (width <= 300px) {
-
     h1{
-        font-size: 2rem;
+        font-size: 25px;
     }
 
     input{
         padding: 5px;
-        border-radius: 0.7em;
-        margin-right: 5px;
+        width: 60%;
     }
 
-    button{
-        padding: 5px 9px;
-        border-radius: 0.7em;
-    }
-
-    li{
-        padding: 7px;
-        padding-right: 90px;
-        font-size: 13px;
+    .list{
+        width: 70%;
     }
 
     ul{
         width: 200px;
+        margin: auto;
+    }
+
+    .item{
+        padding: 9px;
+        font-size: 17px;
+    }
+
+    button{
+        padding: 5px 9px;
     }
     
+    
+}
+
+@media (max-width:155px) {
+
+    h1{
+        font-size: 17px;
+    }
+
+    input{
+        padding: 3;
+        width: 50%;
+    }
+
+    .list{
+        width: 80%;
+    }
+
+    ul{
+        width: 200px;
+        margin: auto;
+    }
+
+    .item{
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    button{
+        padding: 3px 7px;
+    }
 }
