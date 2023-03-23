@@ -31,24 +31,22 @@ main{
 
 h1{
     font-size: 3rem;
+    align-self: center;
 }
 
 input{
+    width: 70%;
     padding: 10px;
     border-radius: 0.7em;
     margin-right: 10px;
 }
 
-.list{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
 ul{
-    width: 500px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 button{
@@ -74,7 +72,7 @@ button:active{
     justify-content: space-between;
     width: 100%;
     height: auto;
-    padding: 16px;
+    padding: 10px;
     border-radius: 2px;
     color: #454545;
     margin-top: 10px;
@@ -89,13 +87,12 @@ button:active{
 
 li{
     color: green;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid black;
     box-shadow: 2px 2px 3px 1px red;
     cursor: pointer;
-    margin: 1rem 0;
-    padding-right: 100px;
-    width: 100%;
+    margin: 0.6rem 0;
+    padding-right: 60px;
 }
 
 .deletequestion{
@@ -192,12 +189,6 @@ li{
 }
 
 
-@media screen and (width <= 600px) {
-
-    ul{
-        width: 280px;
-    }
-}
 
 @media screen and (width <= 574px) {
 
@@ -240,26 +231,19 @@ li{
     }
 
     h1{
-        font-size: 28px;
+        font-size: 39px;
+        align-self: center;
     }
 
     input{
         padding: 6px;
-        width: 60%;
-    }
-
-    .list{
-        width: 70%;
-    }
-
-    ul{
-        width: 200px;
-        margin: auto;
+        width: 75%;
     }
 
     .item{
-        padding: 9px;
-        font-size: 17px;
+        width: 100%;
+        padding: 6px;
+        font-size: 12px;
     }
 
     button{
@@ -285,6 +269,10 @@ li{
 
     }
 
+    .deletequestion{
+        width: 50%;
+    }
+
     .approval{
         padding: 0.4rem;
         
@@ -295,22 +283,12 @@ li{
     }
 
     input{
-        padding: 8px;
-        width: 60%;
-    }
-
-    .list{
-        width: 70%;
-    }
-
-    ul{
-        width: 210px;
-        margin: auto;
+        padding: 6px;
+        width: 65%;
     }
 
     .item{
-        padding: 9px;
-        font-size: 17px;
+        width: 100%;
     }
 
     button{
@@ -329,18 +307,10 @@ li{
         width: 60%;
     }
 
-    .list{
-        width: 70%;
-    }
-
-    ul{
-        width: 200px;
-        margin: auto;
-    }
-
     .item{
-        padding: 9px;
-        font-size: 17px;
+        padding: 5px;
+        font-size: 9px;
+        width: 100%;
     }
 
     button{
@@ -350,29 +320,27 @@ li{
     
 }
 
-@media (max-width:155px) {
+@media (max-width:290px) {
+
+    .deletequestion{
+        width: 70%;
+    }
+}
+
+@media (max-width:171px) {
 
     h1{
-        font-size: 17px;
+        font-size: 21px;
     }
 
     input{
         padding: 3;
-        width: 50%;
-    }
-
-    .list{
-        width: 80%;
-    }
-
-    ul{
-        width: 200px;
-        margin: auto;
+        width: 55%;
     }
 
     .item{
-        padding: 5px;
-        font-size: 12px;
+        padding: 4px;
+        font-size: 7px;
     }
 
     button{
