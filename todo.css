@@ -85,6 +85,10 @@ button:active{
     margin: 0 5px;
 }
 
+.list{
+    width: 90%;
+}
+
 li{
     color: green;
     padding: 5px;
@@ -116,14 +120,14 @@ li{
 .deletequestion h2{
     border-radius: 0.6em 0.6em 0 0;
     background-color: magenta;
-    padding: 10px;
+    padding: 8px;
     font-size: 1em;
     color: #fff;
 
 }
 
 .deletequestion p{
-    font-size: 2em;
+    font-size: 0.7em;
     padding: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -131,10 +135,15 @@ li{
 }
 
 .approval{
-    padding: 1rem;
+    padding: 0.7rem;
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+}
+
+.qust{
+    font-size: 0.8em;
+    padding: 5px;
 }
 
 .back {
@@ -153,81 +162,79 @@ li{
     pointer-events: all;
 }
 
-@media screen and (width <= 760px) {
+@media screen and (width <= 948px) {
 
-    .deletequestion{
-        width: 40%;
-    
-    }
-    
-    .qust{
-        font-size: 1em;
-        padding: 8px;
-    }
-    
     .deletequestion p{
         font-size: 0.9em;
-
-
     }
-    
-}
-
-@media screen and (width <= 650px) {
-
-    
-    .qust{
-        font-size: 1em;
-        padding: 8px;
-    }
-    
-    .deletequestion p{
-        font-size: 0.7em;
-
-    }
-    
-}
-
-
-
-@media screen and (width <= 574px) {
 
     .deletequestion h2{
-        font-size: 0.8em;
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (width <= 859px) {
+
+    .deletequestion p{
+        font-size: 0.75em;
+    }
+
+    .deletequestion h2{
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (width <= 760px) {
+
+    .deletequestion h2{
+        font-size: 0.7em;
     }
 
     
     .qust{
-        font-size: 0.7em;
-        padding: 8px;
+        font-size: 0.6em;
+        padding: 4px;
     }
     
     .deletequestion p{
-        font-size: 0.6em;
+        font-size: 0.7em;
+        padding: 7px;
 
+    }
+
+    .approval{
+        padding: 0.4rem;
+        
     }
     
 }
+
 
 @media screen and (width <= 514px) {
 
     .deletequestion h2{
-        font-size: 0.6em;
+        font-size: 0.5em;
+    }
+
+    .deletequestion{
+        width: 40%;
     }
 
     
     .qust{
-        font-size: 0.5em;
+        font-size: 0.4em;
+        padding: 4px;
     }
     
     .deletequestion p{
         font-size: 0.5em;
-        padding: 6px;
-        padding-top: 16px;
-        padding-bottom: 15px;
-    
-        
+        padding: 7px;
 
+    }
+
+    .approval{
+        padding: 0.5rem;
+        
     }
 
     h1{
@@ -255,27 +262,23 @@ li{
 @media screen and (width <= 381px) {
 
     .deletequestion h2{
-        font-size: 0.4em;
+        font-size: 0.3em;
     }
 
     
     .qust{
-        font-size: 0.4em;
-        padding: 4px;
+        font-size: 0.1em;
+        padding: 2px;
     }
     
     .deletequestion p{
-        font-size: 0.5em;
+        font-size: 0.3em;
         padding: 7px;
 
     }
 
-    .deletequestion{
-        width: 70%;
-    }
-
     .approval{
-        padding: 0.4rem;
+        padding: 0.3rem;
         
     }
 
@@ -324,7 +327,7 @@ li{
 @media (max-width:290px) {
 
     .deletequestion{
-        width: 70%;
+        width: 30%;
     }
 
     .deletequestion h2{
@@ -367,6 +370,11 @@ li{
     .item{
         padding: 4px;
         font-size: 7px;
+    }
+
+    .qust{
+        font-size: 0.02em;
+        padding: 2px;
     }
 
     button{
