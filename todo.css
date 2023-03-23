@@ -261,16 +261,17 @@ li{
     
     .qust{
         font-size: 0.4em;
-        padding: 5px;
+        padding: 4px;
     }
     
     .deletequestion p{
-        font-size: 0.3em;
+        font-size: 0.5em;
+        padding: 7px;
 
     }
 
     .deletequestion{
-        width: 50%;
+        width: 70%;
     }
 
     .approval{
@@ -324,6 +325,31 @@ li{
 
     .deletequestion{
         width: 70%;
+    }
+
+    .deletequestion h2{
+        font-size: 0.1em;
+        padding: 5px;
+    }
+
+    
+    .qust{
+        font-size: 0.1em;
+        padding: 2px;
+    }
+    
+    .deletequestion p{
+        font-size: 0.1em;
+        padding: 5px;
+    }
+
+    .deletequestion{
+        width: 60%;
+    }
+
+    .approval{
+        padding: 0.3rem;
+        
     }
 }
 
