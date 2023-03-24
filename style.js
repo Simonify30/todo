@@ -50,6 +50,8 @@ const addNewList = (input) => {
     newLi.innerHTML = '<div>'+input+'</div>';
     let checkIcon = document.createElement('i');
     let trashIcon = document.createElement('i');
+    divChild.className = 'mark'
+
 
     newLi.className = 'item';
 

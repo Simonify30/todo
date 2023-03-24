@@ -1,45 +1,61 @@
 *{
     padding: 0;
     margin: 0;
-    outline: none;
     box-sizing: border-box;
+    border: 0;
 }
 
 body{
-    width: 95%;
-    max-width: 1440px;
-    margin: 0 auto;
     background-image: linear-gradient(to right, red, blue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .container{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    height: 600px;
-    gap: 10px;
-    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
     
 }
 
 main{
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    max-width: 800px;
+}
+
+.display{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 15px;
 }
 
 h1{
-    font-size: 3rem;
-    align-self: center;
+    font-size: 2.3rem;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
 
 input{
-    width: 70%;
     padding: 10px;
     border-radius: 0.7em;
     margin-right: 10px;
+    font-size: 1em;
 }
+
+div.list{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+
+
+}
+
+
 
 ul{
     margin: auto;
@@ -66,38 +82,37 @@ button:active{
     border-color: green;
 }
 
+
 .item{
     background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    border-radius: 2px;
-    color: #454545;
-    margin-top: 10px;
-    font-size: 1rem;
-    text-transform: uppercase;
-}
-
-.item i{
-    cursor: pointer;
-    margin: 0 5px;
-}
-
-.list{
-    width: 90%;
-}
-
-li{
-    color: green;
     padding: 5px;
     border: 1px solid black;
     box-shadow: 2px 2px 3px 1px red;
     cursor: pointer;
     margin: 0.6rem 0;
-    padding-right: 60px;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    gap: 30px;
+    align-items: center;
+    border-radius: 6px;
+    color: red;
+    font-size: 1rem;
+    text-transform: uppercase;
 }
+
+
+.mark{
+    display: flex;
+    flex-direction: row;
+}
+
+i{
+    padding: 10px 0;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
 
 .deletequestion{
     background-color: #fff;
@@ -162,222 +177,59 @@ li{
     pointer-events: all;
 }
 
-@media screen and (width <= 948px) {
+@media (max-width:334px) {
 
-    .deletequestion p{
-        font-size: 0.9em;
+    div.list, main{
+        width: 250px;
     }
 
-    .deletequestion h2{
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (width <= 859px) {
-
-    .deletequestion p{
-        font-size: 0.75em;
+    h1{
+        font-size: 2em;
     }
 
-    .deletequestion h2{
-        font-size: 0.75em;
+    input{
+        font-size: 0.8em;
+
     }
 }
 
-@media screen and (width <= 760px) {
+@media (max-width:280px) {
 
-    .deletequestion h2{
-        font-size: 0.7em;
-    }
-
-    
-    .qust{
+    input{
         font-size: 0.6em;
-        padding: 4px;
-    }
-    
-    .deletequestion p{
-        font-size: 0.7em;
-        padding: 7px;
 
     }
 
-    .approval{
-        padding: 0.4rem;
-        
+    div.numbers, main{
+        width: 220px;
+    }
+
+    button{
+        padding: 7px 12px;
+    }
+
+    h1{
+        font-size: 1.5em;
     }
     
 }
 
+@media (max-width:220px) {
 
-@media screen and (width <= 514px) {
-
-    .deletequestion h2{
-        font-size: 0.5em;
-    }
-
-    .deletequestion{
-        width: 40%;
-    }
-
-    
-    .qust{
+    input{
         font-size: 0.4em;
-        padding: 4px;
-    }
-    
-    .deletequestion p{
-        font-size: 0.5em;
-        padding: 7px;
-
     }
 
-    .approval{
-        padding: 0.5rem;
-        
-    }
-
-    h1{
-        font-size: 39px;
-        align-self: center;
-    }
-
-    input{
-        padding: 6px;
-        width: 75%;
-    }
-
-    .item{
-        width: 100%;
-        padding: 6px;
-        font-size: 12px;
+    div.numbers, main{
+        width: 170px;
     }
 
     button{
         padding: 5px 9px;
     }
-    
-}
-
-@media screen and (width <= 381px) {
-
-    .deletequestion h2{
-        font-size: 0.3em;
-    }
-
-    
-    .qust{
-        font-size: 0.1em;
-        padding: 2px;
-    }
-    
-    .deletequestion p{
-        font-size: 0.3em;
-        padding: 7px;
-
-    }
-
-    .approval{
-        padding: 0.3rem;
-        
-    }
 
     h1{
-        font-size: 32px;
-    }
-
-    input{
-        padding: 6px;
-        width: 65%;
-    }
-
-    .item{
-        width: 100%;
-    }
-
-    button{
-        padding: 5px 9px;
-    }
-    
-}
-
-@media screen and (width <= 300px) {
-    h1{
-        font-size: 28px;
-    }
-
-    input{
-        padding: 6px;
-        width: 60%;
-    }
-
-    .item{
-        padding: 5px;
-        font-size: 9px;
-        width: 100%;
-    }
-
-    button{
-        padding: 5px 9px;
-    }
-    
-    
-}
-
-@media (max-width:290px) {
-
-    .deletequestion{
-        width: 30%;
-    }
-
-    .deletequestion h2{
-        font-size: 0.1em;
-        padding: 5px;
-    }
-
-    
-    .qust{
-        font-size: 0.1em;
-        padding: 2px;
-    }
-    
-    .deletequestion p{
-        font-size: 0.1em;
-        padding: 5px;
-    }
-
-    .deletequestion{
-        width: 60%;
-    }
-
-    .approval{
-        padding: 0.3rem;
-        
+        font-size: 1.2em;
     }
 }
 
-@media (max-width:171px) {
-
-    h1{
-        font-size: 21px;
-    }
-
-    input{
-        padding: 3;
-        width: 55%;
-    }
-
-    .item{
-        padding: 4px;
-        font-size: 7px;
-    }
-
-    .qust{
-        font-size: 0.02em;
-        padding: 2px;
-    }
-
-    button{
-        padding: 3px 7px;
-    }
-}
